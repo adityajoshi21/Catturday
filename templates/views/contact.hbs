@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+  html {
+	height: 100%;
+	/* max-height: 600px; */
+	width: 1000px;
+	background-color: hsla(200,40%,30%,.4);
+	background-image:		
+		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+	background-repeat: repeat-x;
+	background-position: 
+		0 20%,
+		0 100%,
+		0 50%,
+		0 100%,
+		0 0;
+	background-size: 
+		2500px,
+		800px,
+		500px 200px,
+		1000px,
+		400px 260px;
+	animation: 50s para infinite linear;
+	}
+
+@keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+    
+	}
+  
+
+body{
+  margin-left: 30%;
+  margin-top: 5%;
+  color: rgb(149, 91, 241);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px;
+  font-size: 1.3em;
+}
+
+body> h2:nth-child(1) {
+  color: rgb(122, 11, 72);
+
+} 
+ label{
+   
+   color:royalblue;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px;
+  font-size: 1em;}
+
+  .submit{
+  height: 8vh;
+  width: 10vh;
+  padding-top: 8px;
+  padding-bottom:10px;
+  margin: 10px 20px;
+  border-radius: 7px;
+  font-size:1.4vw;
+  color: azure;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px;
+  font-size: 0.7em;
+  background-color: darkred;}
+  @keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+ 
+ 
+ 
+    </style>
+     
+   
+    <body>
+       <h2 class="text-center px-10 pb-10"> Contact Us!</h2>
+
+       <div class="h-screen flex items-center justify-center"></div>
+
+       <form class="w-full md:w-1/3 bg-white rounded-lg items-center" action="https://formspree.io/f/mwkalpnd" method="POST" id="meowsageForm" enctype=”multipart/form-data”>
+        <div class="flex font-bold justify-center mt-6">
+           <img class="w-6/12 sm:max-h-25 md:max-h-30 shadow-4xl"
+              src="css/contact.jpg" style="border-radius: 40px ;">
+        </div>
+        <h2 class="text-3xl text-center text-gray-700 mb-6">We'd like to hear from you!</h2>
+  
+    
+            <div class="w-full mb-6 mt-6 mr-10">
+            
+              <div class="flex justify-center">
+                <label for="fname" class="px-8  w-full border rounded-full py-6 items-center text-gray-700" ><b>First Name:</b> </label>
+                <input id="fname" type="text" placeholder="First Name">
+              </div>
+              </div><br/><br/>
+            
+              <div class="w-full mb-6 mt-6 mr-10">
+                
+                <div class="flex justify-center">
+                  <label for="lname" class="px-8  w-full border rounded-full py-6 items-center text-gray-700" ><b>Last Name:</b> </label>
+                  <input id="lname" type="text" placeholder="Last Name">
+                
+                </div>
+                </div><br/><br/>
+        
+                <div class="w-full mb-6 mt-6 mr-10">
+                  
+                  <div class="flex justify-center">
+                    <label for="email" class="px-8  w-full border rounded-full py-6 items-center text-gray-700" ><b>Email Address:</b> </label>
+                    <input id="email" type="email" placeholder="Email Address">
+                  
+                  </div>
+                  </div><br/><br/>
+
+         
+             <div class="w-full mb-2 flex justify-center ">
+            <label for="quick_desc"><b>Message:</b></label>
+            </div>
+            <div class="col-75">
+            <textarea id="message" name="subject" placeholder="Enter your message here..." style="width:40vw; resize: vertical; height:30vh";></textarea>
+            </div>
+      
+          <div class="row" style="align-content:center; justify-self:space-around";>
+          <button class="submit"  type="submit"  value="Submit"> Submit</button>
+          
+      </div>
+           
+      
+  </form>
+  <div id="status"></div>
+</section>  
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("meowsageForm");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("status");
+
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add("Success");
+    status.innerHTML = "Thanks! We've received your word";
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
+  
+      </script>
+    </body>
+</html>

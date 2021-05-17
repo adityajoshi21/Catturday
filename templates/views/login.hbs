@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /*set border to the form*/
+      
+    form {
+        border: 3px solid #f1f1f1;
+    }
+    /*assign full width inputs*/
+
+    body{
+        background: #f4dacd;
+    }
+      
+    input[type=email],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    /*set a style for the buttons*/
+    h2{
+        text-align: center;
+    }
+      
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    /* set a hover effect for the button*/
+      
+    button:hover {
+        opacity: 0.8;
+    }
+    label{
+        display: block;
+        color: #C23B23;
+        font: montserrat, monospace;
+        font-weight: 800;
+        font-size: 1.5em;
+        padding: 0;
+        margin-top: 10px;
+        resize: horizontal ;
+    }
+    /*set extra style for the cancel button*/
+      
+    .newRegister {
+        border: 2px solid whitesmoke;
+        
+            margin-top: 10px;
+            display: flex;
+            justify-content: center ;}
+      
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    /*set image properties*/
+      
+    img.avatar {
+        width: 17vw;
+        height: 20vh;
+        border-radius: 50%;
+    }
+    /*set padding to the container*/
+      
+    .container {
+        padding: 16px;
+    }
+    /*set the forgot password text*/
+      
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    /*set styles for span and cancel button on small screens*/
+      
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .newRegister {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+  
+<body>
+  
+    <h2>Login Form</h2>
+    <!--Step 1 : Adding HTML-->
+    <form action="login" method="POST">
+        <div class="imgcontainer">
+            <img src=
+"https://thumbs.dreamstime.com/b/stylish-cool-cat-using-sunglasses-cartoon-vector-illustration-197311229.jpg" 
+                 alt="Avatar" class="avatar">
+        </div>
+  
+        <div class="container">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email Address" name="email" required>
+            <br><br>
+  
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+  
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked" style="color: #C23B23"> Remember Me
+        </div>
+  
+        <div class="newRegister">
+					<div>
+						Don't have an account? <a href="./register" class="ml-2">Sign Up</a>
+					</div>
+    </form>
+  
+</body>
+  
+</html>

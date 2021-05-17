@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{>header}}
+    <body>
+    <!-- header ==============================  -->
+    <header>
+      
+<div class="bg-green-700 p-4 flex justify-between items-center">
+
+    <!--   left side -->
+    <div class="flex items-center">
+     <img src="https://thumbs.dreamstime.com/b/stylish-cool-cat-using-sunglasses-cartoon-vector-illustration-197311229.jpg" width="100" alt="Logo" class="mr-2">
+      <a href="#" class="inline-block p-2 text-green-200 hover:text-green-100 mr-2"  >Home</a>
+      <a href="#" class="inline-block p-2 text-green-200 hover:text-green-100" >Pet Care</a>
+      <a href="#" class="inline-block p-2 text-green-200 hover:text-green-100 mr-2" >Service</a>
+      
+          
+    </div>
+  
+    <!--   right side -->
+    <div class="hidden sm:block">
+      <a href="./login" class="inline-block py-2 px-4 text-black-600 bg-gray-100 hover:bg-yellow-300 hover:text-black-800 rounded transition ease-in duration-150">Log In</a>
+      <a href="./register" class="inline-block py-2 px-4 text-black-600 bg-gray-100 hover:bg-yellow-300 hover:text-black-800 rounded transition ease-in duration-150">Sign Up</a>
+      <a href="./contact" class="inline-block p-2 text-green-200 hover:text-green-100 mr-2" >Contact</a>
+
+    </div>
+  
+  </div>
+  </header>
+
+  
+  <div class="carousel relative shadow-2xl bg-white">
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <!--Slide 1-->
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousel-item absolute opacity-0" style="height:50vh;">
+        
+      <div class="block h-full w-screen bg-yellow-300 text-red-700 text-3xl text-center mb-0">Care
+        <a href="care.html"> 
+          <img src="https://www.aspca.org/sites/default/files/cat-care_general-cat-care_body2-right.jpg" alt="Care and Grooming" class="object-fill h-full w-full m-0 md:object-scale-down  sd:object-scale-down " >
+            
+      </a>
+      </div>
+      
+      </div> 
+      <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"> ‹</label>
+      <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"> ›</label>
+    
+      
+    
+      <!--Slide 2-->
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0" style="height:50vh;">
+       
+        <div class="block h-full w-full bg-yellow-300 text-red-700 text-2xl text-center float-right">Vet and other Services
+          <a href="services.html">
+          <img src="css/2.jpg" alt="Services" class="object-fill h-full w-screen md:object-scale-down  sd:object-scale-down " >
+          </a>    
+       </div> 
+      </div> 
+      <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+      <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+    
+    <!--Slide 3-->
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0" style="height:50vh;">
+       
+        <div class="block h-full w-full bg-yellow-300 text-red-700 text-2xl text-center float-right">Games and Tricks 
+          <a href="tricks.html">
+          <img src="css/3.jpg" alt="Tricks" class="object-fill h-full w-screen md:object-scale-down  sd:object-scale-down " >
+        </a>
+      </div> 
+      </div> 
+      <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+      <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+    
+      
+      <!-- Add additional indicators for each slide-->
+      <ol class="carousel-indicators">
+        <li class="inline-block mr-3">
+          <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+        <li class="inline-block mr-3">
+          <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+        <li class="inline-block mr-3">
+          <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+      </ol>
+      
+    </div>
+  </div>
+  
+  <div class="md:flex justify-between py-20 px-10 bg-green-600 text-green-100">
+    <!--   Welcome to the body of the page  -->
+    <!--   left -->
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h2 class="text-2xl md:text-4xl lg:text-5xl text-white mb-6">Welcome, to the Chonk Nation!</h2>
+      <p class="text"> Everday is a Catturday, never a sad day!
+      <article class="moreText"> Lorem ipsum assumenda sapiente expedita labore atque! Sint velit cumque minus pariatur quisquam, beatae ab quo impedit eaque soluta vel laboriosam itaque similique iste ex aut in nihil dolorem consequuntur possimus eligendi eos optio ipsam! Sint ullam voluptate obcaecati asperiores eos vero sed iusto magnam ad, vel repellat quidem? Omnis fugit accusantium, illo quos eos odio consectetur et nemo excepturi deleniti dolorum adipisci dolores delectus possimus libero, sed iusto dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis neque distinctio modi dicta ut impedit, vel dolore dolores maiores quis vitae nesciunt ab aut, praesentium facilis necessitatibus odio exercitationem velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, error fugit repellat laborum aspernatur neque eligendi officia eius quidem voluptates fugiat numquam, officiis ullam nemo, incidunt delectus. Consequuntur id veritatis odit, aspernatur libero recusandae doloremque necessitatibus aperiam esse eaque consectetur tempore qui quasi, corporis expedita excepturi natus reprehenderit illo temporibus. Veniam eius dolorem cumque! Iusto eum aut et ipsam nemo cum totam delectus explicabo? Quis odio perferendis aliquid facilis ea quaerat vero minima dolorem cumque, est ab! Vero fuga tenetur unde. Perferendis alias, fugit debitis culpa doloremque aperiam molestiae quos incidunt dolore iure officia! Blanditiis sint delectus quam quae nulla.
+
+      </article></p>
+     <button class="read-more-btn">Read More</button>
+
+        
+     
+<script>
+     
+ const readMoreBtn = document.querySelector(".read-more-btn");
+ const text = document.querySelector(".text");
+
+readMoreBtn.addEventListener("click", (e) => {
+text.classList.toggle("show-more");
+if (readMoreBtn.innerText === "Read More") {
+readMoreBtn.innerText = "Read Less";
+} else {
+readMoreBtn.innerText = "Read More";
+}
+});
+
+</script>
+
+
+
+
+      <!-- <p class="mb-6 introText">Everyday is a Catturday, never a sad day! 
+      <article class="moreText"> 
+      At Catturday, we try to reciprocate the feeling when you know its a Saturday, here we bring a one stop platform for all your pet's needs..
+      From being it how to take care of your furry friend , veterinary and medical services, lodging your pet when you are on an outing, games 
+      and tricks to keep them healthy and fit, and last and the most important adopting rather than buying. </article><br>
+      </p>
+   -->
+      
+      <a href="https://www.catcafestudio.com/adoption/" class="inline-block py-3 px-6 text-lg bg-orange-400 text-orange-800 hover:bg-orange-300 rounded">Adopt a Pet</a>
+    
+    </div>
+  
+    <!--   right -->  
+    <div class="md:w-1/2">
+      <img src="css/4.jpg" alt="Happiest Catto" class="w-6/12 rounded-full  h-35 sm:max-h-25 md:max-h-30 shadow-4xl">
+    </div>
+  
+  </div>
+  
+      
+  
+  
+  
+  <!-- features ============================== -->
+  <div class="flex w-screen py-16 px-4 bg-green-800 text-indigo-200 tex
+            t-center">
+  <div class="mr-2 text-center clickableLinks">
+    <a href="./care.html"> <img src="css/groomingCat.jpg"> </a>
+    <p>Grooming!</p>
+  </div>
+    
+
+  <div class="ml-0 mr-2 text-center clickableLinks">
+    <a href="./care.html"> <img src="css/feedingCat.jpg"> </a>
+    <p>Feeding right!</p>
+  </div>
+
+  <div class="mr-2 text-center clickableLinks">
+    <a href="./services.html">  <img src="css/vaccinationCat.jpg"> </a>
+    <p>Vaccination & Meds!</p>
+  </div>
+
+  <div class="mr-2  text-center clickableLinks">
+    <a href="./services.html"> <img src="css/travellingCat.jpg"> </a>
+    <p>Travelling Cat!</p>
+  </div>
+</div>
+<!--PreFooter for testimonials-->
+<!--Left side-->
+<footer class="panel-footer">
+  <div class="p-10 bg-green-600 text-white-400 flex justify-between">
+    
+    <div class="row">
+      <section id="hours" class="col-sm-4">
+        <span>Contact Handles:</span><br>
+        itsacatturday@gmail.com<br>
+        Mon-Fri: 11:00am - 8:30pm<br>
+        Saturday Closed
+        <hr class="visible-xs">
+      </section>
+      <section id="address" class="col-sm-4 mt-20">
+        <span>Address:</span><br>
+        201 Saptarishi Park, Veena Nagar, Mulund-W<br>
+        Mumbai Suburb, MH 400080
+        
+        <hr class="visible-xs">
+      </section> 
+    </div>
+      <h1 class="py-3 px-6 text-lg text-gray-800 text-center testi"> Testimonials    
+      </h1>
+      <figure class="bg-yellow-200 rounded-xl p-8 " id="testimonial0">
+        
+        <img class="w-24 h-12 rounded-full mx-auto" src="https://images.unsplash.com/photo-1545254644-a60835b8d36e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" width="80" height="100">
+        <div class="pt-6 space-y-4">
+          <blockquote>
+            <p class="text-sm text-opacity-30 font-semibold">
+              "Catturday is the place to be at, if you're a cat person and are looking for the best ways to look after your feline"
+             
+            </p>
+          </blockquote>
+          <figcaption class="font-small">
+            <div class="text-cyan-600">
+              Shasank Pandey
+            </div>
+            <div class="text-gray-500">
+              Mumbai, India
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+      
+      <figure class="bg-yellow-200 rounded-xl p-8 mx-4" id="testimonial1">
+        <img class="w-24 h-12 rounded-full mx-auto" src="https://images.unsplash.com/photo-1615942581207-42a20ca5cd5e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80" alt="" width="80" height="100">
+        <div class="pt-6 space-y-4">
+          <blockquote>
+            <p class="text-sm text-opacity-30 font-semibold ld:overflow-y:scroll md:overflow-y:scroll">
+              "I was worried 'cos my cat had missed her vaccine shot by a few months, it was after taking the guidance and help from Catturday I found the right solution"
+             
+             </p>
+          </blockquote>
+          <figcaption class="font-small">
+            <div class="text-cyan-600">
+              Shubhika Ganguly
+            </div>
+            <div class="text-gray-500">
+              Mumbai, India
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+     
+    
+  </div>   
+</footer>
+
+
+
+
+<!---------- footer-------->
+<div class="p-10 bg-gray-600 text-white-900 flex justify-between">
+
+  <!--   left -->
+  <div class="md:w-1/2">
+
+    <h3 class="text-lg mb-2">Join the Newsletter</h3>
+    <form class="flex" action="mailto:itsacatturday@gmail.com" method="POST" id="my-form">
+      <input type="email" class="w-full rounded-l py-3 px-4 outline-none focus:bg-indigo-200" placeholder="Enyer your email address">
+      <button class="bg-red-300 hover:bg-red-400 text-red-800 rounded-r px-4 submit" type="submit"  value="Submit">Join</button>
+      
+      
+     
+    </form>
+    
+
+
+  </div>
+
+  <!--   right -->
+  <div class="flex items-right ml-10">
+    &copy; Copyright Catturday 2021 | 202012108
+  </div>
+</div>
+
+  </body>
+  <script> 
+        
+    function showNotification(){
+      const notification= new Notification("Welcome to Catturday, have you signed up yet?", {
+      icon:"https://thumbs.dreamstime.com/b/stylish-cool-cat-using-sunglasses-cartoon-vector-illustration-197311229.jpg"
+    });
+
+    notification.onclick=(e)=>{
+      window.location.href="./register";
+    };
+    }
+    console.log(Notification.permission);
+    if(Notification.permission==="granted")
+    { showNotification();
+     }
+    else if (Notification.permission!=="denied"){
+      Notification.requestPermission().then(permission => {
+        if(permission==="granted"){
+        showNotification();}
+      });
+    }
+    
+ 
+
+ 
+    </script>
+
+  
+  </html>
