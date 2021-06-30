@@ -16,10 +16,6 @@ How to install:
 
 ![image](https://user-images.githubusercontent.com/50805195/123964197-d41c9500-d9d0-11eb-910f-c74b1a60ec13.png)
  
-![image](https://user-images.githubusercontent.com/50805195/123964919-95d3a580-d9d1-11eb-8f8d-2a8b3f129ff9.png)
-
-
-
-
+ ![localhost_3000_](https://user-images.githubusercontent.com/50805195/123967498-ff54b380-d9d3-11eb-92a5-324f2dd09fe1.png)
 ![localhost_3000_register](https://user-images.githubusercontent.com/50805195/123965390-08448580-d9d2-11eb-9ae3-56b04c066ce4.png)
 ![localhost_3000_login](https://user-images.githubusercontent.com/50805195/123965403-0b3f7600-d9d2-11eb-9391-784c44dfdad7.png)
