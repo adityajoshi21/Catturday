@@ -1,5 +1,5 @@
-![localhost_3000_contact (1)](https://user-images.githubusercontent.com/50805195/124379218-4e9c2c00-dcd3-11eb-93c8-ed76779392e7.png)
-# Catturday-
+ 
+# Caturday
 A Web App project that is basically made to celebrate the Caturday for all cat slaves. Supports responsive design, and includes features like login/signup, user authentication, contact page, and other cat care and adoption related services. 
 
 All the adoptions are carried by The Feline Foundations, and all the Cats can be found at Cat Cafe Studio, Versova.
