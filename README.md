@@ -5,9 +5,9 @@ All the adoptions are carried by The Feline Foundations, and all the Cats can be
 
 
 How to install:
- Open terminal : npm init
+ Open terminal : npm install , it will install all the dependencies required for the project like, hbs, express, mongoose etc.
  
- Install dev dependencies: npm run dev
+ Run build: npm run dev
  
  App starts on port no 3000 || any other available port.
  Just enter localhost:3000 in URL bar and you're good to go!
